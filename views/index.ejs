@@ -1,0 +1,24 @@
+<% include partials/header %>
+
+<p>What up My App</p>
+ <%#<h1> Title: <%= title %> </h1>#%>
+
+ <table id="table" >  
+    <thead>  
+        <tr>  
+            <th>First name</th>  
+            <th>Last name</th>  
+        </tr>  
+    </thead>  
+     <tbody>  
+     <% result.forEach(function (user) { %>
+        <tr>  
+            <td><%= user.firstname %></td>  
+            <td><%= user.lastname %></td>
+        </tr>                                   
+     <% }) %>
+     </tbody>
+</table> 
+
+
+<% include partials/footer %>
